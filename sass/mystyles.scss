@@ -1,0 +1,97 @@
+@import './_settings';
+@import 'foundation';
+
+// @include foundation-grid;
+@include foundation-everything($prototype: true);
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+
+// Define a variable for the background color
+$background-color: #272727;
+
+// Use the variable to set the background color
+body {
+  background-color: $background-color;
+}
+
+.endpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid blue;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    background: #5ae8e3;
+}
+
+// Center the container
+.gen5SummaryMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; // Full viewport height
+  width: 100%;
+}
+
+// Flexbox for lists
+.statlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid;
+    border-color: rgb(118, 118, 118);
+    border-radius: 15px;
+    background-image: url("space.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list1, .list2 {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.list3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h5 {
+  margin: 0;
+  padding: 1px;
+  color: white;
+  border-bottom: solid rgb(175, 175, 175);
+  border-radius: 15px;
+}
+
+img[alt="mudkip-sprite"] {
+    padding: 2px;
+    margin: 1px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 90px;
+}
+
+.navtop {
+    display: flex;
+    justify-content: space-between;
+    color: azure;
+    margin: 0;
+    padding: 1px;
+    color: white;
+    border-bottom: solid rgb(175, 175, 175);
+    border-radius: 15px;
+    h5 {
+        background-color: #272727;
+    }
+}
